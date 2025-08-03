@@ -1,4 +1,196 @@
 <!DOCTYPE html>
-<html>
-    Test website commit 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save the Manuals: The Car Enthusiast Comeback Story</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">The Manual Transmission</h1>
+            <h2 class="hero-subtitle">The Car Enthusiast Comeback Story</h2>
+            <p class="hero-description">
+                Stick shift cars had been dying for decades. Automakers were slowly removing them from their lineups. 
+                Most consumers would opt for the automatic because it was more fuel efficient, easier to drive (especially in traffic), 
+                and more reliable. They were about to become extinct until 2021, when the pandemic hit and nostalgia for the past was born.
+            </p>
+            <div class="scroll-indicator">
+                <svg class="scroll-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="decline-section scroll-trigger" id="timeline-section">
+        <div class="section-container">
+            <div class="content-grid">
+                <div class="text-content">
+                    <h2 class="section-title decline-title">The Great Decline</h2>
+                    <p class="section-description">
+                        From the 1980s onward, automatic transmissions became increasingly sophisticated and fuel-efficient.
+                        Consumer preferences shifted toward convenience, and manual transmissions began their long march toward obsolescence.
+                    </p>
+                    <div class="timeline-points">
+                        <div class="timeline-point">
+                            <div class="point-dot decline-dot"></div>
+                            <span class="point-text">1980: 35% market share</span>
+                        </div>
+                        <div class="timeline-point">
+                            <div class="point-dot decline-dot"></div>
+                            <span class="point-text">2000: 12.4% market share</span>
+                        </div>
+                        <div class="timeline-point">
+                            <div class="point-dot warning-dot"></div>
+                            <span class="point-text">2021: 0.9% - All-time low</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-content">
+                    <div id="timeline-chart" class="chart-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="low-point-section scroll-trigger" id="low-point-section">
+        <div class="section-container">
+            <div class="low-point-content">
+                <h2 class="section-title low-point-title">2021: The Brink of Extinction</h2>
+                <div class="big-stat">0.9%</div>
+                <p class="section-description">
+                    of cars sold in the US had a manual transmission in 2021. This was the lowest point in automotive history.
+                </p>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <h3 class="reason-title">Fewer Options and EVs</h3>
+                        <p class="reason-text">Many automakers were going electric. The market was shrinking as cars got bigger, heavier, and more expensive. People preferred one car solutions, like SUVs and no one had the buying power to support a fun 2 door coupe weekend car. </p>
+                    </div>
+                    <div class="reason-card">
+                        <h3 class="reason-title">Unfavorable Economics</h3>
+                        <p class="reason-text">Low demand made manual options expensive to develop, and manuals were too niche to make a profit. Manuals used to be faster than their automatic counterparts, but research and development had quickly improved the automatics from a performance perspective. </p>
+                    </div>
+                    <div class="reason-card">
+                        <h3 class="reason-title">Convenience Culture</h3>
+                        <p class="reason-text">Consumers prioritized ease of use over engagement, and customers began to priortize  convenience and ease-of-use, viewing cars more as point-A-to-B appliances than engaging machines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Comeback Section -->
+    <section class="comeback-section scroll-trigger" id="comeback-section">
+        <div class="section-container">
+            <div class="comeback-header">
+                <h2 class="section-title comeback-title">The Unexpected Comeback</h2>
+                <p class="section-description">
+                    Post-pandemic life (2022 and onward) sparked a renewed appreciation and nostalgia for the manual transmission. 
+                    In a world of Teslas taking over and cars losing their soul, the post pandemic brought about 
+                    a loud craving for something real. A rebellion began, not with signs, but with shift knobs and 3 pedals. 
+                    The #SaveTheManuals movement became a rally cry for those who refused to let the soul of driving die. 
+                    It was a conscious choice to master a dying art, to feel the raw, mechanical connection that a computer could never replicate.
+                </p>
+            </div>
+            <div class="content-grid">
+                <div class="chart-content">
+                    <div id="comeback-chart" class="chart-container"></div>
+                </div>
+                <div class="text-content">
+                    <h3 class="subsection-title">The Fight for Three Pedals</h3>
+                    <p class="section-description">
+                        Like a mechanical watch or a vinyl record, the manual is a cherished analog experience. 
+                        But choosing one today—knowing it's less efficient, objectively slower, and a hassle in 
+                        traffic—isn't just a preference. It's a bold statement that the experience of driving 
+                        will always matter more than the numbers.
+                    </p>
+                    <div class="growth-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">2022 Recovery</span>
+                            <span class="stat-value positive">+33% to 1.2%</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">2023 Growth</span>
+                            <span class="stat-value positive">+42% to 1.7%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="future-section">
+        <div class="section-container">
+            <div class="future-content">
+                <h2 class="section-title future-title">What's Next?</h2>
+                <p class="section-description">
+                    The manual's comeback is a powerful statement, but it happens in the shadow of an all-electric future. 
+                    What does it mean to be a driver, or a car enthusiast when internal combustion engines fade away?
+                </p>
+                <div class="future-grid">
+                    <div class="future-card optimistic">
+                        <h3 class="future-card-title">The last Golden Years</h3>
+                        <p class="future-card-text">
+                            Right now, car manufacturers are coming out with their final edition/ special edition models. 
+                            The MK5 Supra, the Audi R8, the Porsche 911... these are all examples of the final fully internal
+                            combustion engines with a manual transmission before automakers go electric. 
+                        </p>
+                    </div>
+                    <div class="future-card realistic">
+                        <h3 class="future-card-title">The Enthusiast's Legacy</h3>
+                        <p class="future-card-text">
+                            The future is unknown. As enthusiasts continue to support manual transmissions, 
+                            it becomes a premium for those who truly appreciate the experience. Automakers will be 
+                            aware that the feeling of driving will always matter, even as we move into a world of 
+                            electic SUVs. 
+                        </p>
+                    </div>
+                </div>
+                <div class="conclusion">
+                    <p class="conclusion-text">
+                        The manual transmission's story is no longer about how we drive, but <strong>why</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sources-section">
+        <div class="section-container">
+            <div class="sources-content">
+                <h3 class="sources-title">Sources</h3>
+                <div class="sources-grid">
+                    <div class="source-category">
+                        <h4 class="source-category-title">Data Sources</h4>
+                        <ul class="source-list">
+                            <li>Manual transmission market share data compiled from industry reports and automotive sales statistics</li>
+                            <li>https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P101CUU6.pdf </li>
+                            <li>https://www.theautopian.com/manual-transmissions-now-make-up-less-than-1-of-new-car-sales/</li>
+                        </ul>
+                    </div>
+                    <div class="source-category">
+                        <h4 class="source-category-title">Image Sources</h4>
+                        <ul class="source-list">
+                            <li>Background images collected from various pressrooms. </li>
+                            <li>https://newsroom.porsche.com/</li>
+                            <li>https://hondanews.com/</li>
+                            <li>https://pressroom.toyota.com/</li>
+                            <li>https://www.tesla.com/tesla-gallery</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="timeline-chart.js"></script>
+    <script src="comeback-chart.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
