@@ -40,7 +40,6 @@ function createTimelineChart() {
       const newXScale = event.transform.rescaleX(xScale)
       const newYScale = event.transform.rescaleY(yScale)
       
-      // Update line generator with new scales
       const newLine = d3
         .line()
         .x((d) => newXScale(d.year))
@@ -58,12 +57,10 @@ function createTimelineChart() {
         .attr("cx", (d) => newXScale(d.year))
         .attr("cy", (d) => newYScale(d.percentage))
       
-      // Update key labels
       g.selectAll(".key-label")
         .attr("x", (d) => newXScale(d.year))
         .attr("y", (d) => newYScale(d.percentage) - 15)
       
-      // Update axes
       g.select(".x-axis")
         .call(d3.axisBottom(newXScale).tickFormat(d3.format("d")))
       
